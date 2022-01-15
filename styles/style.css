@@ -96,6 +96,13 @@ nav li {
   color: #e02c6dde;
 }
 
+/* forth Container for youtube iframe*/
+.video {
+  display: grid;
+  justify-items: center;
+  font-size: 30px;
+}
+
 /* Footer Style */
 
 .footer-container {
@@ -112,4 +119,30 @@ nav li {
   height: 50px;
   width: 50px;
   color: bisque;
+}
+
+/* ----Media Queries-------- */
+
+/* Mobile View */
+@media only screen and (max-width: 688px) {
+  .content-1,
+  .product-list,
+  .third-contianer,
+  .footer-container {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+  }
+}
+
+/* Tab View */
+@media only screen and (max-width: 768px) {
+  .content-1,
+  .product-list,
+  .third-contianer,
+  .footer-container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+  }
 }
